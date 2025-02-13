@@ -7,26 +7,10 @@ from threading import Thread
 import time
 import gradio as gr
 
-"deepseek-r1-distill-llama-70b"
-"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"
-"moonshot-v1-8k"
-"sk-1X4SSbvHxlbhFCFtSlSMBzeYrlgGk1Og2m9fBCs53T15OD0p"
-"https://api.moonshot.cn/v1"
-"5b9bf9a72d6045a29d27a84a0cfb5b42.yJlWsvsVkbJ91uE4"
-"https://open.bigmodel.cn/api/paas/v4/"
-
-
-
-models = ["glm-4-plus", "glm-4V-plus"]
+models = []
 seed = -1
-clients = [
-    OpenAI(
-        api_key="5b9bf9a72d6045a29d27a84a0cfb5b42.yJlWsvsVkbJ91uE4",
-        base_url="https://open.bigmodel.cn/api/paas/v4/"
-    ),OpenAI(
-        api_key="5b9bf9a72d6045a29d27a84a0cfb5b42.yJlWsvsVkbJ91uE4",
-        base_url="https://open.bigmodel.cn/api/paas/v4/"
-    )]
+clients = []
+#自己整api
 
 char_prompts = {
     "char1":
